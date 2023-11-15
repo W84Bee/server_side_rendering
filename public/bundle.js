@@ -1033,10 +1033,6 @@ var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Home = __webpack_require__(36);
-
-var _Home2 = _interopRequireDefault(_Home);
-
 var _reactRouterDom = __webpack_require__(47);
 
 var _Routes = __webpack_require__(79);
@@ -1046,11 +1042,12 @@ var _Routes2 = _interopRequireDefault(_Routes);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Use Hydrate instead of render to make sure that this is working
+// Startup point for the client side application
 _reactDom2.default.hydrate(_react2.default.createElement(
   _reactRouterDom.BrowserRouter,
   null,
   _react2.default.createElement(_Routes2.default, null)
-), document.querySelector('#root')); // Startup point for the client side application
+), document.querySelector('#root'));
 
 /***/ }),
 /* 18 */
