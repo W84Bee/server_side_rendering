@@ -154,7 +154,7 @@ exports.default = function (req, store) {
     )
   ));
 
-  return '\n    <html>\n      <head></head>\n      <body>\n          <div id="root">' + content + '</div>\n          <script src="bundle.js"></script>\n      </body>\n    </html>\n  ';
+  return '\n    <html lang="en">\n      <head><title></title></head>\n      <body>\n          <div id="root">' + content + '</div>\n          <script src="bundle.js"></script>\n      </body>\n    </html>\n  ';
 };
 
 /***/ }),
