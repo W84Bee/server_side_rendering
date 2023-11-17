@@ -28,3 +28,5 @@ D
 src/client/Routes.js,8/3/832abe03587867a780ab0446da7ae1035cf8d8a4
 J
 src/helpers/createStore.js,6/3/6373065b25aae3aee8c5d25f8b87c0391a863a78
+K
+src/client/actions/index.js,a/a/aa1923723e1af0a78c6ee083a4ed0065f6f8a62d
