@@ -88,6 +88,8 @@ var _express = __webpack_require__(3);
 
 var _express2 = _interopRequireDefault(_express);
 
+var _reactRouterConfig = __webpack_require__(19);
+
 var _renderer = __webpack_require__(4);
 
 var _renderer2 = _interopRequireDefault(_renderer);
@@ -95,6 +97,10 @@ var _renderer2 = _interopRequireDefault(_renderer);
 var _createStore = __webpack_require__(10);
 
 var _createStore2 = _interopRequireDefault(_createStore);
+
+var _Routes = __webpack_require__(6);
+
+var _Routes2 = _interopRequireDefault(_Routes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -104,8 +110,7 @@ app.use(_express2.default.static('public'));
 app.get('*', function (req, res) {
   var store = (0, _createStore2.default)();
 
-  // Some logic to initialize
-  // and load data into the store
+  console.log((0, _reactRouterConfig.matchRoutes)(_Routes2.default, req.path));
 
   res.send((0, _renderer2.default)(req, store));
 });
