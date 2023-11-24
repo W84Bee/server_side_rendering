@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchUsers } from '../actions';
-import mapStateToProps from 'react-redux/lib/connect/mapStateToProps'
 
 class UsersList extends Component {
   componentDidMount () {
-    // this.props.fetchUsers();
+    this.props.fetchUsers();
   }
 
   renderUsers() {
@@ -15,14 +14,19 @@ class UsersList extends Component {
   }
 
   render () {
-    <div>
-      Here's a big list of users:
-    </div>
+    return (
+      <div>
+        Here's a big list of users:
+        <ul>{ this.renderUsers() }</ul>
+      </div>
+    );
+
   }
 }
 
-function mapState(state) {
+
+function mapStateToProps(state) {
   return { users: state.users };
 }
 
-export  default connect(mapStateToProps, { fetchUsers })(UsersList);
+export default connect(mapStateToProps, { fetchUsers })(UsersList);
