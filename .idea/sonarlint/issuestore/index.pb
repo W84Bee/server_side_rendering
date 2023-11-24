@@ -16,8 +16,6 @@ A
 build/bundle.js,f/5/f5f081628af8a5984b2730c789823dfc0010bbbb
 A
 webpack.client.js,3/3/3382dc8cf748acdbb15c43db77490f28b4cca80c
-=
-src/client.js,2/a/2aced63f866a2b6c912d89877aedf3828e529560
 D
 src/client/client.js,6/e/6eac0a5fec5fa95ec9e2498588f2dd79492fc078
 @
@@ -28,3 +26,13 @@ G
 src/helpers/renderer.js,6/0/601f30545bbad9cb1b21498554af3998429d7d8e
 D
 src/client/Routes.js,8/3/832abe03587867a780ab0446da7ae1035cf8d8a4
+J
+src/helpers/createStore.js,6/3/6373065b25aae3aee8c5d25f8b87c0391a863a78
+K
+src/client/actions/index.js,a/a/aa1923723e1af0a78c6ee083a4ed0065f6f8a62d
+S
+#src/client/reducers/usersReducer.js,e/3/e3fc5a9109fd1c2ee1221e1265eba3c62260a244
+L
+src/client/reducers/index.js,1/d/1dfb2d28adc04b9e0620547bb30c71af83f3a82c
+R
+"src/client/components/UsersList.js,e/2/e235a2c32617571107b6019aa10401a165c8eb45
